@@ -1,0 +1,25 @@
+[package]
+name = "experimental_runtime"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = {version="4.3.19", features=["derive"]}
+colored = "2.0.4"
+thiserror = "1.0.44"
+tokio = {version = "1.29.1", features=["full"]}
+async-trait = "0.1.74"
+serde_json = "1.0.108"
+futures = "0.3.29"
+serde = "1.0.193"
+reqwest = "0.11.20"
+log = "0.4.22"
+anyhow = "1.0.89"
+
+# deno related
+v8 = "0.105.1"
+serde_v8 = "0.217.0"
+deno_core = "0.307.0"
+deno_runtime = "0.177.0"
+deno_permissions = "0.28.0"
+deno_ast = { version = "0.41.2", features = ["transpiling"] }
